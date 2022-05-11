@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="js/Registro.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Css\StyleForm.css">
+  <link rel="stylesheet" href="js/Registro.js">
+  <link rel="stylesheet" href="js/validaciones.js">
+  <title>Registrarse</title>
+</head>
+
+<body>
+
+  <header style="background-color:#FFCC00" ;>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Dudas</a>
+      </li>
+    </ul>
+  </header>
+
+  <div class="container">
+    <form id="contact" method="post" action="#">
+
+      <h3>Registrar usuario</h3>
+      <h4>Completa todos los datos obligatorios*</h4>
+
+      <fieldset>
+        <label for="">Nombre*</label>
+        <input placeholder="Nombre" id="nom_usuario" type="text" tabindex="1" required="" pattern="[A-Za-z0-9]{3,10}">
+      </fieldset>
+
+      <fieldset>
+        <label for="">Apellido*</label>
+        <input placeholder="Apellido" id="ape_usuario" type="text" tabindex="2" required="" pattern="[A-Za-z0-9]{3,10}">
+      </fieldset>
+
+      <fieldset>
+        <label for="Rut">Rut*</label>
+        <input placeholder="12345678-9" id="rut_usuario" type="text" tabindex="3" required=""
+          pattern="\d{3,8}-[\d|kK]{1}">
+      </fieldset>
+
+      <fieldset>
+        <label for="">Correo*</label>
+        <input placeholder="Correo@correo.com" id="mail_usuario" type="email" tabindex="4" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="Telefono">Telefono*</label>
+        <input placeholder="(+56)" id="tel_usuario" type="tel" tabindex="5" required="" pattern="[0-9]{9}"
+          maxlength="9" minlength="1">
+      </fieldset>
+
+      <fieldset>
+        <label for="">Contraseña*</label>
+        <input placeholder="Contraseña" id="pass_usuario" type="password" tabindex="6" required=""
+          pattern="(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ].*" maxlength="20" minlength="12"
+          title="Debe tener al menos una mayúscula, una minúscula y un dígito">
+      </fieldset>
+
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit">Crear cuenta</button>
+      </fieldset>
+
+      <fieldset class="centro">
+        <a href="index.html">Volver al inicio</a>
+      </fieldset>
+
+   
+
+    </form>
+
+  </div>
+
+    <!-- Footer -->
+    <footer style="background-color:#FFCC00" >
+      <p class="text-center text-muted">© 2022 Duoc UC</p>
+    </footer>
+    <!-- Fin footer -->
+
+
+</body>
+
+</html>
