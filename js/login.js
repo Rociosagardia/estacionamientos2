@@ -27,6 +27,8 @@ $(document).ready(function(){
           $.ajax(settings).done(function (response) {
             console.log(response)
             alert("Login correcto")
+            localStorage.setItem("usuario", JSON.stringify(response));
+            window.location="UsuarioLogueado.html";
           }).fail(function(){
               alert("correo o contraseña invalida")
           })
