@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Usuario logueado</title>
+    <title>Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Css\StyleForm.css" />
+    <script src="/js/validaciones.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -19,11 +21,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Css\StyleForm.css">
-    <script src="js/usuarioLogueado.js"></script>
-
-
 </head>
+
+
 
 <body>
     <header style="background-color:#FFCC00" ;>
@@ -39,27 +39,21 @@
             </li>
         </ul>
     </header>
-    
     <div class="container">
-        <form id="contact" action="#" method="post">
+        <form id="contact" action="#">
+            <fieldset>
+                <h6 class="centro">MR PARKING</h6>
+                <h5 class="centro">Bienvenido</h5>
+            </fieldset>
 
-            <h6 class="centro">MR PARKING</h6>
-            <h5 class="centro">Bienvenido</h5>
-
-            <div class="centro">
-                <span id="nombre"></span>
-            </div>
-   
             <h4 class="centro">Selecciona la opcion que necesites</h4>
-
-            <select class="selector" id="selector" name="selector"><br><br><br><br>
+            <select class="selector" id="selector" name="selector">
                 <option value="vehiculo">Registrar un vehiculo</option>
-                <option value="estacionamiento">Registrar un estacionamiento</option><br><br><br><br>
-            </select><br><br><br>
-            
-            <button type="submit" id="aceptarSelector">Aceptar</button><br><br><br><br><br><br>
+                <option value="Estacionamiento">Registrar un estacionamiento</option>
+            </select>
+            <input class="boton" type="submit" value="Aceptar"><br><br><br>
 
-        </form>
+        </form><br><br><br><br><br>
     </div>
     <!-- Footer -->
     <footer style="background-color:#FFCC00" ;>
