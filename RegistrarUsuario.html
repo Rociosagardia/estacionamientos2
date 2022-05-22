@@ -45,37 +45,31 @@
     <form id="contact" method="post" action="#">
 
       <h3>Registrar usuario</h3>
-      <h4>Completa todos los datos obligatorios*</h4>
+      <h4>Todos los campos son obligatorios</h4>
 
       <fieldset>
-        <label for="">Nombre*</label>
         <input placeholder="Nombre" id="nom_usuario" type="text" tabindex="1" required="" pattern="[A-Za-z0-9]{3,10}">
       </fieldset>
 
       <fieldset>
-        <label for="">Apellido*</label>
         <input placeholder="Apellido" id="ape_usuario" type="text" tabindex="2" required="" pattern="[A-Za-z0-9]{3,10}">
       </fieldset>
 
       <fieldset>
-        <label for="Rut">Rut*</label>
-        <input placeholder="12345678-9" id="rut_usuario" type="text" tabindex="3" required=""
+        <input placeholder="Rut" id="rut_usuario" type="text" tabindex="3" required=""
           pattern="\d{3,8}-[\d|kK]{1}">
       </fieldset>
 
       <fieldset>
-        <label for="">Correo*</label>
-        <input placeholder="Correo@correo.com" id="mail_usuario" type="email" tabindex="4" required>
+        <input placeholder="Correo" id="mail_usuario" type="email" tabindex="4" required>
       </fieldset>
 
       <fieldset>
-        <label for="Telefono">Telefono*</label>
-        <input placeholder="(+56)" id="tel_usuario" type="tel" tabindex="5" required="" pattern="[0-9]{9}"
+        <input placeholder="Telefono" id="tel_usuario" type="tel" tabindex="5" required="" pattern="[0-9]{9}"
           maxlength="9" minlength="1">
       </fieldset>
 
       <fieldset>
-        <label for="">Contraseña*</label>
         <input placeholder="Contraseña" id="pass_usuario" type="password" tabindex="6" required=""
           pattern="(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ].*" maxlength="20" minlength="12"
           title="Debe tener al menos una mayúscula, una minúscula y un dígito">

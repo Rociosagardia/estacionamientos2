@@ -43,21 +43,17 @@
     <form id="contact" method="post" action="#">
       <h2>Registrar estacionamiento</h2>
       <h4>
-        Completa todos los datos obligatorios* para poder registrar tu
-        estacionamiento
+        Todos los campos son obligatorios 
       </h4>
 
       <!--DATOS OBLIGATORIOS -->
       <fieldset>
-        <label for="">Ciudad*</label>
-        <input value="" id="ciudad" placeholder="Ciudad" type="text" tabindex="1" maxlength="30" minlength="3"
+        <input value="" id="ciudad" placeholder="Región" type="text" tabindex="1" maxlength="30" minlength="3"
           required />
         <p id="p1" style="color: red"></p>
       </fieldset>
 
-      <label class="custom-control-label" for="comuna">Comuna</label>
-      <br />
-      <select class="custom-select selector" id="comuna" required>
+      <select class="form-select" aria-label="Default select example">
         <option selected value="">Seleccione la comuna</option>
         <option value="1">Santiago</option>
         <option value="2">Conchali</option>
@@ -104,50 +100,32 @@
         <p id="p4" style="color: red"></p>
       </fieldset> -->
       <fieldset>
-        <label>Numero*</label>
-        <input type="number" id="number" placeholder="Numero" pattern="{1,6}" required />
+        <input value="" id="numero" placeholder="Región" type="text" tabindex="1" maxlength="30" minlength="3"
+          required />
+        <p id="p1" style="color: red"></p>
       </fieldset>
+
+      
 
       <fieldset selected value="">
         <input value="casa" type="radio" id="Casa" name="customRadio" class="custom-control-input" required />
         <label class="custom-control-label" for="Casa">Casa</label>
         <br />
-        <input value="edificio" type="radio" id="Edificio" name="customRadio" class="custom-control-input" />
+        <input value="edificio" type="radio" id="Edificio" name="customRadio"  class="custom-control-input" />
         <label class="custom-control-label" for="Edificio">Edificio</label>
         <br />
-        <input value="block" type="radio" id="Block" name="customRadio" class="custom-control-input" />
-        <label class="custom-control-label" for="Block">Block </label>
-        <p id="p5" style="color: red"></p>
       </fieldset>
 
       <!--DATOS OPCIONALES -->
-
-      <h4>Datos opcionales</h4>
-      <fieldset>
-        <input placeholder="Numero de estacionamiento" type="text" name="numero_estacionamiento"
-          id="numero_estacionamiento" class="form-control optional" />
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2"> Datos Adicionales (Opcional) </label>
+      </div>
+      
+      <fieldset class="text-center">
+        <a href="Departamento.html">Siguiente</a>
       </fieldset>
-
-      <fieldset>
-        <input placeholder="Tipo de estacionamiento" type="text" name="tipo_estacionamiento" id="tipo_estacionamiento"
-          class="form-control optional" />
-      </fieldset>
-
-      <fieldset>
-        <input placeholder="Nivel de estacionamiento" type="text" name="nivel_estacionamiento"
-          id="nivel_estacionamiento" class="form-control optional" />
-      </fieldset>
-
-      <fieldset>
-        <input type="text" name="caracteristicas" id="caracteristicas" class="form-control optional"
-          placeholder="Caracteristicas del estacionamiento" rows="3" />
-      </fieldset>
-
-      <fieldset>
-        <button name="submit" type="submit" id="contact-submit">
-          Registrar vehiculo
-        </button>
-      </fieldset>
+  
 
       <fieldset class="centro">
         <a href="index.html">Volver al inicio</a>
