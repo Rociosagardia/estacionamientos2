@@ -5,8 +5,13 @@ $(document).ready(function () {
       $("#contact")[0].reportValidity();
       return;
     }
-    var ciudad = $("#ciudad").val();
-    console.log(ciudad);
+
+    var usuario = localStorage.getItem("usuario");
+    usuario = JSON.parse(usuario);
+    console.log(usuario);
+
+    var region = $("#region").val();
+    console.log(region);
 
     var comuna = $("#comuna").val();
     console.log(comuna);
@@ -14,11 +19,8 @@ $(document).ready(function () {
     var calle = $("#calle").val();
     console.log(calle);
 
-    var number = $("#number").val();
-    console.log(number);
-
-    var rdDireccion = $("rdDireccion").val() || "casa";
-    console.log(rdDireccion);
+    var numero = $("#numero").val();
+    console.log(numero);
 
     var numero_estacionamiento = $("#numero_estacionamiento").val();
     console.log(numero_estacionamiento);
@@ -29,8 +31,8 @@ $(document).ready(function () {
     var nivel_estacionamiento = $("#nivel_estacionamiento").val();
     console.log(nivel_estacionamiento);
 
-    var caracteristicas = $("#caracteristicas").val();
-    console.log(caracteristicas);
+    var descripcion = $("#descripcion").val();
+    console.log(descripcion);
 
     var settings = {
       url: "http://localhost:3000/estacionamiento",
@@ -40,22 +42,22 @@ $(document).ready(function () {
         "Content-Type": "application/json",
       },
       data: JSON.stringify({
-        ciudad: ciudad,
+        region: region,
         comuna: comuna,
         calle: calle,
-        number: number,
-        rdDireccion: rdDireccion,
+        numero: numero,
         numero_estacionamiento: numero_estacionamiento,
         tipo_estacionamiento: tipo_estacionamiento,
         nivel_estacionamiento: nivel_estacionamiento,
-        caracteristicas: caracteristicas,
+        descripcion: descripcion,
+        "rut_usuario": usuario.rut_usuario,
       }),
     };
 
     $.ajax(settings).done(function (response) {
-      alert("estacionamiento registrado");
-      $("#contact")[0].reset()
-      console.log(response);
-    });
+      console.log(response)
+      alert("Estacionamiento creado correctamente")
+      window.location = "pantallaEstacionamiento.html";
+    })
   });
 });
