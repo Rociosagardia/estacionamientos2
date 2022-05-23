@@ -14,7 +14,7 @@ $(document).ready(function() {
             window.location="RegistrarVehiculo.html"
         }
         else{
-            alert("haz seleccionado registrar un estacionaiento")
+            alert("haz seleccionado registrar un estacionamiento")
             window.location="RegistrarEstacionamiento.html"
         }
          
