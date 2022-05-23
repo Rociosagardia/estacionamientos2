@@ -187,17 +187,48 @@ else {
   document.getElementById("p4").innerHTML = ""
 
 }
+}
 
 
 
+  function infoOpcional(){
 
+  var casa = document.getElementById("casa").value
+  var edificio = document.getElementById("edificio").value
 
+if (casa =="casa") {
 
-
+  document.getElementById("p5").innerHTML = "<p>  aaaaaaaaa      </p>"
 
 
 
 }
+
+
+}
+
+function estacionamientoOnChange(sel) {
+  if (sel.value=="casa"){
+       divC = document.getElementById("nCasa");
+       divC.style.display = "";
+
+       divT = document.getElementById("nEdificio");
+       divT.style.display = "none";
+
+  }else{
+
+       divC = document.getElementById("nCasa");
+       divC.style.display="none";
+
+       divT = document.getElementById("nEdificio");
+       divT.style.display = "";
+  }
+}
+
+
+
+
+
 
 
 

@@ -53,7 +53,7 @@
         <p id="p1" style="color: red"></p>
       </fieldset>
 
-      <select class="form-select" aria-label="Default select example">
+      <select class="form-select" aria-label="Default select example" required>
         <option selected value="">Seleccione la comuna</option>
         <option value="1">Santiago</option>
         <option value="2">Conchali</option>
@@ -105,34 +105,56 @@
         <p id="p1" style="color: red"></p>
       </fieldset>
 
-      
+      <div>
+        <div>
+             <SELECT NAME="estacionamiento" onChange="estacionamientoOnChange(this)">
+                <OPTION id="casa" value="casa">Casa/Depto</OPTION>
+                <OPTION id="edificio" value="edificio">Edificio</OPTION> 
+             </SELECT>
+        </div>
+        <div id="nCasa" style="display:;">
+          Número Dirección  
+          <input type="text">
+        </div>
+        <div id="nEdificio" style="display:none;">
+             <br>
+             Numero Estacionamiento*
+             <br>
+             <input type='text' name='numEstacionamiento'size='20' maxLength='6'>
+             <br><br>
+             Nivel Estacionamiento*
+             <br>
+             <input type='text' name='nivEstacionamiento'size='20' maxLength='6'>
+             
+        </div>
+  </div>
 
-      <fieldset selected value="">
-        <input value="casa" type="radio" id="Casa" name="customRadio" class="custom-control-input" required />
-        <label class="custom-control-label" for="Casa">Casa</label>
-        <br />
-        <input value="edificio" type="radio" id="Edificio" name="customRadio"  class="custom-control-input" />
-        <label class="custom-control-label" for="Edificio">Edificio</label>
-        <br />
-      </fieldset>
+     
 
       <!--DATOS OPCIONALES -->
       <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-        <label for="floatingTextarea2"> Datos Adicionales (Opcional) </label>
+        <br>
+        Descripcion (Opcional)
+        <textarea class="form-control" placeholder="" id="datosOp" style="height: 100px"></textarea>
+        
       </div>
-      
-      <fieldset class="text-center">
-        <a href="Departamento.html">Siguiente</a>
+      <fieldset>
+        
+        <button name="submit" type="submit" id="contact-submit">
+          Registrar Estacionamiento
+        </button>
       </fieldset>
-  
 
-      <fieldset class="centro">
-        <a href="index.html">Volver al inicio</a>
-      </fieldset>
+
+
 
     </form>
   </div>
+
+
+
+
+  
 
   <!-- Footer -->
   <footer style="background-color: #ffcc00" ;>
@@ -140,5 +162,7 @@
   </footer>
   <!-- Fin footer -->
 </body>
+
+<script src="js/validaciones.js"></script>
 
 </html>
