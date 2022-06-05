@@ -21,6 +21,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="js/pantallaestacionamiento.js"></script>
 </head>
 
 <body>
@@ -43,17 +44,20 @@
 
     <div class="container3">
         <div class="imagen"> 
-            <img class="imagen" src="Img/estacionamiento.png" alt="">
+            <img class="imagen" src="Img/esta.jpg" alt="">
         </div>
         <div class="ps">
-            <h3 style="font-weight: bold;">Estacionamiento En San Sebastián, Las Condes</h3>
+            <h3 style="font-weight: bold;">Estacionamiento en region <span id="region"></span></h3>
             <h2 style="margin-top: 5px;">$20.000</h2>
             <br>
-            <h6 style="font-weight: bold;">Edificio</h5>
-            <p style="font-size:15px;">Numero: 63</p>
-            <p style="font-size:15px;">Nivel: Sexto piso</p>
-            <p style="font-size:20px;">Se arrienda estacionamiento en subterráneo, edificio con conserjería las 24/7, con acceso controlado.
-            </p>
+            <h6 style="font-weight: bold;">Casa o departamento: </h6><span id="tipo_estacionamiento" style="font-size:15px;"></span>
+
+            <h6 style="font-weight: bold;">Numero</h6><span id="numero" style="font-size:15px;"></span>
+            
+            <h6 style="font-weight: bold;">Nivel estacionamiento</h6> <span id="nivel_estacionamiento" style="font-size:15px;"></span>
+             
+            <h6 style="font-weight: bold;">Descripcion</h6> <span id="descripcion" style="font-size:15px;"></span><br><br>
+           
             <div style="margin-top: 200px;" class="ps2">
                 <table class="table">
                     <thead>
@@ -64,9 +68,9 @@
                         </tr>
                     </thead>
                     <tr>
-                        <th scope="row">Desain Bienes Raíces</th>
-                        <th>+56 9 XXXX XXXX</th>
-                        <th>Correo@Correo.com</th>
+                        <th id="nom_usuario" scope="row"></th>
+                        <th id="tel_usuario"></th>
+                        <th id="mail_usuario"></th>
                     </tr>
                 </table>
             </div>

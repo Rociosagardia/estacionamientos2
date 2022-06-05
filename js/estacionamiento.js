@@ -57,6 +57,7 @@ $(document).ready(function () {
     $.ajax(settings).done(function (response) {
       console.log(response)
       alert("Estacionamiento creado correctamente")
+      localStorage.setItem("estacionamiento", JSON.stringify(response));
       window.location = "pantallaEstacionamiento.html";
     })
   });
