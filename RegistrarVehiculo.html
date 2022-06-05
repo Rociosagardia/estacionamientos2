@@ -13,8 +13,6 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="validacion.js">
   <link rel="stylesheet" href="Css\StyleForm.css">
-<<<<<<< HEAD
-<<<<<<< HEAD
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -26,14 +24,11 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-=======
+
   <script src="js/vehiculo.js"></script>
   <script  src="js/validaciones.js"></script>
->>>>>>> 3b8db40a3474c5364db4934a33c66d70fec9dce3
-=======
-  <script src="js/vehiculo.js"></script>
-  <script  src="js/validaciones.js"></script>
->>>>>>> 3b8db40a3474c5364db4934a33c66d70fec9dce3
+
+
 </head>
 
 <body>
@@ -51,30 +46,19 @@
     </ul>
   </header>
   <div class="container">
-    <form id="vehiculo" action="" method="post">
+    <form id="contact" action="" method="post">
       <h3>Registrar Vehiculo</h3>
+      
+        <input placeholder="Marca" id="marca" type="text" tabindex="1" required="" pattern="[A-Za-z0-9]{1,10}"
+        minlength="1">
+      </fieldset>
+      <br>
       <fieldset>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <label for="Marca" class="form-label">Marca</label>
-        <input type="text" class="form-control" id="marca" placeholder="Marca">
+        <input placeholder="Modelo" id="modelo" type="text" tabindex="1" required="" pattern="[A-Za-z0-9]{1,10}"
+        minlength="1">
       </fieldset>
       <fieldset>
-        <label for="Modelo" class="form-label">Modelo</label>
-        <input type="text" class="form-control" id="modelo" placeholder=" Modelo" value="">
-      </fieldset>
-      <fieldset>
-        <label for="Año vehiculo" class="form-label">Año</label>
-        <input type="text" class="form-control" id="anno" placeholder="Año del Vehiculo" value="">
-      </fieldset>
-      <fieldset>
-        <label for="Color" class="form-label">Color</label>
-        <input type="text" class="form-control" id="color" placeholder="Color" value="">
-      </fieldset>
-      <fieldset>
-        <label for="Patente" class="form-label">Patente</label>
-        <input type="text" class="form-control" id="patente" placeholder="Ingresar Patente del Vehiculo" value="">
-=======
+
         <input placeholder="Marca" id="marca" type="text" tabindex="1" required="" pattern="[A-Za-z0-9]{1,10}"
         minlength="1">
       </fieldset>
@@ -83,16 +67,7 @@
         minlength="1">
       </fieldset>
       <fieldset>
-=======
-        <input placeholder="Marca" id="marca" type="text" tabindex="1" required="" pattern="[A-Za-z0-9]{1,10}"
-        minlength="1">
-      </fieldset>
-      <fieldset>
-        <input placeholder="Modelo" id="modelo" type="text" tabindex="1" required="" pattern="[A-Za-z0-9]{1,10}"
-        minlength="1">
-      </fieldset>
-      <fieldset>
->>>>>>> 3b8db40a3474c5364db4934a33c66d70fec9dce3
+
         <input placeholder="Año del Vehiculo" id="anio" type="text" tabindex="1" required="" pattern="[A-Za-z0-9]{4,4}"
         maxlength="4" minlength="4">
       </fieldset>
@@ -102,7 +77,6 @@
       <fieldset>
         <input placeholder="Patente" id="patente" type="tel" tabindex="5" required="" pattern="[A-Za-z0-9]{6}"
           maxlength="6" minlength="6">
->>>>>>> 3b8db40a3474c5364db4934a33c66d70fec9dce3
       </fieldset>
       <br>
       <fieldset>
