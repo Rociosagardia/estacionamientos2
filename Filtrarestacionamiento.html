@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="Css\StyleForm.css" />
+  <script src="/js/validaciones.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <body>
+    <header style="background-color:#FFCC00" ;>
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Dudas</a>
+        </li>
+      </ul>
+    </header>
+    <div class="container">
+      <form id="contact" action="#">
+        <h3 class="centro">MR PARKING</h3>
+        <label for="customRange1" class="form-label">Precios <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+          </svg></label>
+            <input type="range" class="form-range" id="customRange1">
+            <select id="comuna" class="form-select" aria-label="Default select example" required>
+                <option selected value="">Seleccione el metodo de pago</option>
+                <option value="1">Transferencias</option>
+                <option value="2">Efectivo</option>
+              </select>
+              <select id="comuna" class="form-select" aria-label="Default select example" required>
+                <option selected value="">Seleccione el tipo de estacionamiento</option>
+                <option value="1">Municipal</option>
+                <option value="2">Privado</option>
+                <option value="2">Particular</option>
+              </select>
+
+        <select id="comuna" class="form-select" aria-label="Default select example" required>
+            <option selected value="">Seleccione la comuna</option>
+            <option value="1">Santiago</option>
+            <option value="2">Conchali</option>
+            <option value="3">Huechuraba</option>
+            <option value="4">Independencia</option>
+            <option value="5">Quilicura</option>
+            <option value="6">Recoleta</option>
+            <option value="7">Renca</option>
+            <option value="8">Las Condes</option>
+            <option value="9">Lo Barnechea</option>
+            <option value="10">Providencia</option>
+            <option value="11">Vitacura</option>
+            <option value="12">La Reina</option>
+            <option value="13">Macul</option>
+            <option value="14">Ñuñoa</option>
+            <option value="15">Peñalolén</option>
+            <option value="16">La Florida</option>
+            <option value="17">La Granja</option>
+            <option value="18">El Bosque</option>
+            <option value="19">La Cisterna</option>
+            <option value="20">La Pintana</option>
+            <option value="21">San Ramón</option>
+            <option value="22">Lo Espejo</option>
+            <option value="23">Pedro Aguirre Cerda</option>
+            <option value="24">San Joaquín</option>
+            <option value="25">San Miguel</option>
+            <option value="26">Cerrillos</option>
+            <option value="27">Estación Central</option>
+            <option value="28">Maipú</option>
+            <option value="29">Cerro Navia</option>
+            <option value="30">Lo Prado</option>
+            <option value="31">Pudahuel</option>
+            <option value="32">Quinta Normal</option>
+          </select>
+          <label for="customRange1" class="form-label">Tiempo de arriendo </label>
+                <input type="range" class="form-range" id="customRange1">
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" width="16" height="16">Buscar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button>
+                  </fieldset>
+      </form>
+    </div>
+    <!-- Footer -->
+    <footer style="background-color:#FFCC00" ;>
+      <p class="text-center text-muted">© 2022 Duoc UC</p>
+    </footer>
+    <!-- Fin footer -->
+  </body>
+
+</html>
