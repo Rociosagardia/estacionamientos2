@@ -8,12 +8,12 @@ body {
 	line-height:30px;
 	padding: 0;
 	font-family:"Open Sans", Helvetica, Arial, sans-serif;
-	display: grid;
+	display:block;
 	justify-content: center;
 	align-items: center;
 	font-size: 12px;
-  	color:#777;
-	background:#023574;
+  color:rgb(0 0 0 / 90%);
+	background:#004085;
 }
 
 
@@ -27,7 +27,7 @@ body {
 
 
 #searchInput:focus {
-  border-bottom: 2px solid #4575b6;
+  border-bottom: 2px solid #004085;
 }
 
 
@@ -66,7 +66,7 @@ td {
 
 
 tr:nth-child(even) {
-  background-color: #dee8f5;
+  background-color: rgb(255, 208, 0);
 }
 
 footer{
